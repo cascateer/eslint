@@ -1,6 +1,6 @@
 {
   "name": "@cascateer/eslint",
-  "version": "0.0.4",
+  "version": "0.0.3",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/cascateer/eslint.git"
@@ -9,7 +9,10 @@
     "semver-patch": "npm version patch && git push origin main --tags",
     "update": "npm cache clean --force && npx npm-check-updates -u && npm i"
   },
-  "main": "src/config.js",
+  "exports": {
+    ".": "./src/config.ts",
+    "./config": "./src/config.js"
+  },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
     "@smarttools/eslint-plugin-rxjs": "^1.0.22",
