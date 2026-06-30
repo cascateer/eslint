@@ -1,9 +1,9 @@
 import eslint from "@eslint/js";
 import rxjs from "@smarttools/eslint-plugin-rxjs";
 import globals from "globals";
-import tseslint from "typescript-eslint";
+import tseslint, { ConfigWithExtends } from "typescript-eslint";
 
-export default tseslint.config({
+const config: ConfigWithExtends = {
   ignores: ["dist"],
   extends: [
     eslint.configs.recommended,
@@ -35,4 +35,6 @@ export default tseslint.config({
     "rxjs/suffix-subjects": "warn",
     "rxjs/finnish": "warn",
   },
-});
+};
+
+export default config;
