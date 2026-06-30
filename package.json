@@ -1,0 +1,24 @@
+{
+  "name": "@cascateer/eslint",
+  "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cascateer/eslint.git"
+  },
+  "scripts": {
+    "semver-patch": "npm version patch && git push origin main --tags",
+    "update": "npm cache clean --force && npx npm-check-updates -u && npm i"
+  },
+  "exports": {
+    ".": "./src/config.ts"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@smarttools/eslint-plugin-rxjs": "^1.0.22",
+    "globals": "^17.7.0",
+    "typescript-eslint": "^8.62.1"
+  },
+  "peerDependencies": {
+    "eslint": ">=9"
+  }
+}
