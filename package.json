@@ -10,7 +10,7 @@
     "update": "npm cache clean --force && npx npm-check-updates -u && npm i"
   },
   "exports": {
-    "./config": "./src/config.js"
+    ".": "./src/config.js"
   },
   "dependencies": {
     "@eslint/js": "^10.0.1",
