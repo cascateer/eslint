@@ -13,7 +13,7 @@
     ".": "./src/config.ts",
     "./config": "./src/config.js"
   },
-  "devDependencies": {
+  "dependencies": {
     "@eslint/js": "^10.0.1",
     "@smarttools/eslint-plugin-rxjs": "^1.0.22",
     "globals": "^17.7.0",
