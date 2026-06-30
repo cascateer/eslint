@@ -7,7 +7,8 @@
   },
   "scripts": {
     "semver-patch": "npm version patch && git push origin main --tags",
-    "update": "npm cache clean --force && npx npm-check-updates -u && npm i"
+    "update": "npm cache clean --force && npx npm-check-updates -u && npm i",
+    "build": "tsc"
   },
   "exports": {
     ".": "./src/config.js"
