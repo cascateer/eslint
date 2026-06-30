@@ -10,7 +10,6 @@
     "update": "npm cache clean --force && npx npm-check-updates -u && npm i"
   },
   "exports": {
-    ".": "./src/config.ts",
     "./config": "./src/config.js"
   },
   "dependencies": {
